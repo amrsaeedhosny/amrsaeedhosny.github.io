@@ -1,59 +1,59 @@
 html,
 body {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Inter, sans-serif;
+    font-size: 16px;
     color: #1b1b1b;
+}
+
+a {
+    color: #1b1b1b;
+    text-decoration: none;
 }
 
 header {
     padding: 40px 80px;
 }
 
-a {
-    text-decoration: none;
-    color: #1b1b1b;
-}
-
-#name {
+#logo {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 32px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-#information {
-    padding: 30px 0px;
+#profile {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 
-#photo-wrapper {
+#frame {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    padding: 20px;
 }
 
-#photo-wrapper img {
+#frame img {
     width: 250px;
     border-radius: 100%;
 }
 
-#details {
-    max-width: 600px;
+#information {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-self: center;
+    max-width: 600px;
 }
 
 #title {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
     margin: 10px;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 #title a {
@@ -61,26 +61,26 @@ a {
 }
 
 #bio {
-    line-height: 1.5;
-    text-align: center;
     margin: 5px;
-
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.05rem;
 }
 
-#social-media {
+#social {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 15px;
 }
 
-#social-media a {
-    margin: 0 7px;
+#social a {
+    margin: 0 7.5px;
 }
 
-#social-media a:hover {
+#social a:hover {
     color: rgb(0, 186, 124);
 }
 
-#social-media i {
-    font-size: 20px;
+#social i {
+    font-size: 1.25rem;
 }
