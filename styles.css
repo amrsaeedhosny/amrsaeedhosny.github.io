@@ -17,7 +17,7 @@ header {
     padding: 40px 80px;
 }
 
-#logo {
+header>#logo {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -29,58 +29,133 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 40px 20px 120px 20px;
+    animation: fade-in ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-#frame {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-#frame img {
+#profile>img {
     width: 250px;
+    margin: 20px;
     border-radius: 100%;
 }
 
-#information {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 600px;
-}
-
-#title {
+#profile>#title {
     margin: 10px;
     text-align: center;
     font-size: 1.4rem;
 }
 
-#title a {
+#profile>#title a {
     color: rgb(0, 186, 124);
 }
 
-#bio {
+#profile>#bio {
+    max-width: 550px;
     margin: 5px;
     text-align: center;
     line-height: 1.5;
     font-size: 1.05rem;
 }
 
-#social {
+#profile>#social {
     display: flex;
     justify-content: center;
     margin: 15px;
 }
 
-#social a {
+#profile>#social a {
     margin: 0 7.5px;
 }
 
-#social a:hover {
+#profile>#social a:hover {
     color: rgb(0, 186, 124);
 }
 
-#social i {
+#profile>#social i {
     font-size: 1.25rem;
+}
+
+#profile>#social i:hover {
+    font-size: 1.5rem;
+    transition-duration: 0.8s;
+}
+
+#podcast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px 40px 20px;
+    background-color: #a52f89;
+}
+
+#podcast>#title {
+    margin: 40px 20px;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    font-family: "Vibes", system-ui;
+    font-weight: 400;
+    text-shadow: #ff00d0 1px 0 10px, #ff00d0 1px 0 10px;
+}
+
+#podcast>#details {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#podcast>#details>#cover>img {
+    width: 450px;
+    box-shadow: 0 0 5px #310120, 0 0 150px #ff00d0;
+}
+
+#podcast>#details>#cover>#listen {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0px;
+}
+
+#podcast>#details>#cover>#listen>a>img {
+    width: 130px;
+}
+
+#podcast>#details>#episodes {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+}
+
+#podcast>#details>#episodes iframe {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(215, 215, 215);
+}
+
+#podcast>#details>#episodes>#explore-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a52f89;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(215, 215, 215);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
