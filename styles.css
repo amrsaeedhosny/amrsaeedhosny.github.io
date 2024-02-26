@@ -136,6 +136,7 @@ header #name {
 }
 
 #podcast>#details>#episodes {
+    max-width: 1000px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
