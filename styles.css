@@ -29,7 +29,7 @@ header>#logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px 160px 20px;
+    padding: 40px 20px 60px 20px;
     animation: fade-in ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -90,6 +90,28 @@ header>#logo {
 #profile>#social i:hover {
     font-size: 1.5rem;
     transition-duration: 0.8s;
+}
+
+#articles .sk-medium-publication-feed-container {
+    padding: 50px 75px 50px 75px !important;
+}
+
+#articles .sk-medium-publication-feed-load-more-posts {
+    margin-bottom: 50px !important;
+}
+
+#articles .medium_publication_post_title {
+    margin: 10px 2.5px;
+    font-size: 1.1rem !important;
+}
+
+#articles .medium_publication_post_creator {
+    margin: 10px 2.5px !important;
+    font-size: 0.8rem !important;
+}
+
+#articles .sk-description {
+    font-size: 0.88rem !important;
 }
 
 #podcast {
