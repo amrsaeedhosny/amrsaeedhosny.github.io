@@ -152,24 +152,30 @@ header #name {
 }
 
 #podcast>#details>#explore-more {
-    background-color: color(srgb 0.5877 0.568 1);
+    background-color: #47c2b1;
+    color: white;
     padding: 10px 15px;
     border-radius: 15px;
     font-weight: bold;
     font-size: 0.8rem;
-    box-shadow: 0 0 5px #83256d;
 }
 
 #articles .sk-medium-publication-feed-container {
     padding: 50px 75px 50px 75px !important;
 }
 
+@media only screen and (max-width: 1000px) {
+    #articles .sk-medium-publication-feed-container {
+        padding: 50px 25px 50px 25px !important;
+    }
+}
+
 #articles .sk-medium-publication-feed-load-more-posts {
-    margin-bottom: 50px !important;
+    margin-bottom: 25px !important;
 }
 
 #articles .medium_publication_post_title {
-    margin: 10px 2.5px;
+    margin: 10px 2.5px !important;
     font-size: 1.1rem !important;
 }
 
@@ -181,6 +187,24 @@ header #name {
 #articles .sk-description {
     font-size: 0.88rem !important;
 }
+
+
+@media only screen and (max-width: 1000px) {
+
+    #articles .grid-item-medium-publication-feed,
+    #articles .grid-sizer-medium-publication-feed {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #articles .grid-item-medium-publication-feed,
+    #articles .grid-sizer-medium-publication-feed {
+        width: 100% !important;
+    }
+}
+
 
 footer {
     width: 100%;
