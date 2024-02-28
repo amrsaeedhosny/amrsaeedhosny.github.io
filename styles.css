@@ -141,7 +141,7 @@ header #name {
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 #podcast>#details>#episodes>iframe {
