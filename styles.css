@@ -160,6 +160,26 @@ header #name {
     font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 768px) {
+
+    #podcast>#details>img {
+        width: 400px;
+    }
+
+    #podcast>#details>#listen {
+        width: 400px;
+        padding: 15px 0px;
+    }
+
+    #podcast>#details>#listen>a>img {
+        width: 125px;
+    }
+
+    #podcast>#details>#episodes>iframe {
+        width: 400px;
+    }
+}
+
 #articles .sk-medium-publication-feed-container {
     padding: 50px 75px 50px 75px !important;
 }
