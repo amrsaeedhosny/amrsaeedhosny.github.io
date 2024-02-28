@@ -164,12 +164,6 @@ header #name {
     padding: 50px 75px 50px 75px !important;
 }
 
-@media only screen and (max-width: 1000px) {
-    #articles .sk-medium-publication-feed-container {
-        padding: 50px 25px 50px 25px !important;
-    }
-}
-
 #articles .sk-medium-publication-feed-load-more-posts {
     margin-bottom: 25px !important;
 }
@@ -190,6 +184,10 @@ header #name {
 
 
 @media only screen and (max-width: 1000px) {
+
+    #articles .sk-medium-publication-feed-container {
+        padding: 50px 25px 50px 25px !important;
+    }
 
     #articles .grid-item-medium-publication-feed,
     #articles .grid-sizer-medium-publication-feed {
